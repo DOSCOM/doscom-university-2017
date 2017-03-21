@@ -6,14 +6,14 @@ Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop 
 
 ## Web Programming
 
-### [pertemuan 0](./WEB-PROGRAMMING-0.md)
+### [Web Programming Pertemuan 0](./WEB-PROGRAMMING-0.md)
 
-### [pertemuan 1](./WEB-PROGRAMMING-1.md)
+### [Web Programming Pertemuan 1](./WEB-PROGRAMMING-1.md)
 
-### [pertemuan 2](./WEB-PROGRAMMING-2.md)
+### [Web Programming Pertemuan 2](./WEB-PROGRAMMING-2.md)
 
-### [pertemuan 3](./WEB-PROGRAMMING-3.md)
+### [Web Programming Pertemuan 3](./WEB-PROGRAMMING-3.md)
 
-### [pertemuan 4](./WEB-PROGRAMMING-4.md)
+### [Web Programming Pertemuan 4](./WEB-PROGRAMMING-4.md)
 
 ---
