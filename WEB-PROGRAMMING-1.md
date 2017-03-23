@@ -1,7 +1,5 @@
 # Review Materi Pertemuan Pertama Doscom University #
 
-## Index Materi
-
 ### HTML
 #### Membuat file html sederhana
 Untuk membuat file html anda cukup membuat file dengan menggunakan text editor. Kemudian simpan file tersebut dengan nama yang anda kehendaki dengan ekstensi `.html`. Selamat anda sudah dapat membuat file html \(^0^)/
@@ -28,9 +26,16 @@ Untuk menulis judul anda dapat memilih menggunakan tag `h1`, `h2` sampai `h6`. B
 Sebagai contoh :
 ```html
 <h1>Judul dengan h1</h1>
+```
+# Judul dengan h1
+```html
 <h2>Judul dengan h2</h2>
+```
+## Judul dengan h2
+```html
 <h6>Judul dengan h6</h6>
 ```
+## Judul dengan h6
 
 #### Menulis kalimat atau paragraf menggunakan Paragraph
 Untuk menulis kalimat anda dapat meletakkanya di dalam tag `p`. Sebagai contoh :
@@ -58,7 +63,7 @@ Dalam HTML untuk setiap konten yang ditulis biasanya dikelompokkan kedalam satu 
 <div>
   <h1>Ini judul konten</h1>
   <p>
-    Ini isi konten.
+    /*Ini isi konten.*/
   </p>
 </div>
 ```
@@ -129,11 +134,198 @@ Berdasarkan kegunaanya ada beberapa cara untuk menggunakan link yaitu :
 
 
 ### CSS
-#### Cara menginjek CSS ke dalam HTML
-- Menggunakan tag
-- Menulisnya di dalam
-- Export File
+#### Menambahkan CSS ke dalam HTML
+Untuk dapat menambahkan CSS ke dalam HTML ada beberapa cara yaitu :
+- Menulisnya di dalam tag menggunakan argumen `style`
+  ```html
+  <p style="<--! isi css disini -->">
 
-### Menggunakan CSS
+  </p>
+  ```
+  Sebagai contoh :
+  ```html
+  <p style="color: blue; margin: auto">
+    Ini adalah kalimat yang akan di custom menggunakan css.
+  </p>
+  <p>
+    Ini adalah kalimat yang tidak di custom menggunakan css.
+  </p>
+  ```
+  Pada contoh tersebut kita hanya menggunakan css pada tag p bagian atas. Sehingga yang mengalami perubahan hanya konten bagian atas.
+- Menggunakan tag style (internal css)
+  ```html
+  <body>
+    <style>
+      /*isi css di sini*/
+    </style>  
+  </body>
+  ```
+  Sebagai contoh :
+  ```html
+  <body>
+    <style>
+      p{
+        color: blue;
+        margin: auto;
+      }
+    </style>  
+  </body>
+  Pada contoh tersebut kita menggunakan css pada seluruh tag p pada file html yang bersangkutan. Sehingga seluruh content yang menggunakan tag p akan mengalami kostumisasi.
+- Export File (eksternal css)
+  Untuk mengexport file css pertama anda harus mempunyai file css. Pastikan file css anda berada pada direktori yang sama atau beberapa level lebih tinggi dengan file html anda. Hal ini sebenarnya digunakan untuk mempermudah dalam memasukkan path file css anda.
+  Kemudian isi file css anda dengan coding yang dikehendaki.
+  ```css
+    p{
+      color: blue;
+      margin: auto;
+    }
+  ```
+  Kemudian export file css anda ke dalam HTML menggunakan tag `link`. Dan masukkan path file css anda pada argumen `href`. Jangan lupa menambahkan argumen `rel` dengan value `stylesheet`.
+  ```html
+  <head>
+    <link rel="stylesheet" href="urlCssAnda.css">
+  </head>
+  ```
+  Tag link digunakan untuk mengexport css dengan nama urlCssAnda.css.
 
-### Menggunakan id dan div untuk menggunakan css pada konten
+
+#### Kostumisasi css pada konten tertentu
+Pada beberapa contoh diatas kita telah belajar menggunakan css pada tag HTML pada konten yang universal. Sekarang kita akan coba untuk mengkostumisasi konten tertentu.
+##### Menggunakan argumen id
+Argumen id ini nantinya akan anda gunakan untuk mendandai konten yang akan anda kostumisasi.
+```html
+<p id="namaId">
+  Kalimat Pertama <br>
+  Kalimat Kedua <br>
+  Kalimat Ketiga <br>
+</p>
+```
+Berikut cara menggunakan css-nya.
+```css
+#namaId{
+  color: blue;
+  margin: auto;
+}
+```
+##### Menggunakan argumen class
+Argumen class ini nantinya akan anda gunakan untuk mendandai konten yang akan anda kostumisasi. Tetapi ada sedikit perbedaan antara menggunakan argumen class ini pada tag div dan tag selain div.
+Berikut contoh yang menggunakan tag div.
+```html
+<div class="namaClass">
+  Kalimat Pertama <br>
+  Kalimat Kedua <br>
+  Kalimat Ketiga <br>
+</p>
+```
+Berikut cara menggunakan css pada tag div.
+```css
+.namaClass{
+  color: blue;
+  margin: auto;
+}
+```
+Berikut contoh yang menggunakan tag selain div.
+```html
+<p class="namaClass">
+  Kalimat Pertama <br>
+  Kalimat Kedua <br>
+  Kalimat Ketiga <br>
+</p>
+```
+Berikut cara menggunakan css pada tag div.
+```css
+p.namaClass{
+  color: blue;
+  margin: auto;
+}
+```
+#### Macam - macam Kostumisasi css
+- Mengganti warna tulisan
+  Untuk mengganti warna tulisan anda dapat menambahkan warna yang anda kehedaki(dalam bahasa inggris) ke dalam parameter. Sebagai contoh :
+  ```css
+  .namaClass{
+    color: blue;
+  }
+  ```
+  Atau anda dapat menggunakan kode warna. Untuk kode warna yang dikehendaki anda dapat cari pada website http://. Sebagai contoh :
+  ```css
+  .namaClass{
+    color: #FF5319
+  }
+  ```
+- Mengganti ukuran tulisan
+  Untuk mengganti ukuran tulisan cukup menambahkan ukuran yang dikehendaki menggunakan pixel(px).
+  ```css
+  .namaClass{
+    font-size: 30px;
+  }
+  ```
+- Menambahkan margin
+  Ada beberapa cara untuk menambah margin di css. Ragamnya berdasarkan seberapa banyak parameter yang diinputan pada margin.
+  Untuk margin yang menerima 1 inputan berarti dia melakukan kostumisasi margin di seluruh sisi pada konten bersangkutan (atas, bawah, kiri dan kanan).
+  ```css
+  .namaClass{
+    margin: auto;
+  }
+  ```
+  Untuk margin yang menerima 2 inputan berarti dia melakukan kostumisasi margin di bagian atas-bawah dan kiri-kanan.
+  ```css
+  .namaClass{
+    margin: auto 1px;
+  }
+  ```
+  Untuk margin yang menerima 4 inputan berarti dia melakukan kostumisasi margin di seluruh sisi pada konten bersangkutan (atas, bawah, kiri dan kanan).
+  ```css
+  .namaClass{
+    margin: 20% 40px 10% 30px;
+  }
+  ```
+  Jarak margin sendiri dapat didefinisikan dengan pixel(px) dan persentase(%).
+- Mengatur perataan
+  ```css
+  .namaClass{
+    text-align: 20% 40px 10% 30px;
+  }
+  ```
+- Mengubah warna background
+  ```css
+  .namaClass{
+    text-align: center;
+  }
+  ```
+- Mengatur lebar konten
+  ```css
+  .namaClass{
+    width: 70%;
+  }
+  ```
+- Mengatur tinggi konten
+  ```css
+  .namaClass{
+    height: 70%;
+  }
+  ```
+- Mengatur indentasi kedalam
+  ```css
+  .namaClass{
+    padding: 70%;
+  }
+  ```
+- Mengatur warna border
+  ```css
+  .namaClass{
+    border-color: #00B289;
+  }
+  ```
+- Mengatur style border
+  ```css
+  .namaClass{
+    border-style: solid;
+  }
+  ```
+- Mengatur lebar border
+  ```css
+  .namaClass{
+    border-width: solid;
+  }
+  ```
