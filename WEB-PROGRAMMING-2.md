@@ -54,24 +54,32 @@ Ada beberapa perintah dasar git dalam terminal, yang paling banyak digunakan yai
 
 
 # Github
+Github merupakan salah satu sarana developer untuk berkolaborasi dalam membangun software.
+Github memiliki unsur sosial, dimana orang-orang dapat membagikan code miliknya untuk dilihat orang lain dan juga melihat code yang orang lain bagikan, bahkan dapat berkontribusi di code(proyek) itu.
+Ini menjadikan github sebagai platform terpopuler untuk membagikan proyek opensource dan menjadi tempat komunitas bergotong-royong mengembangkan proyek opensource.
+Udah gak jaman lagi programmer itu orang yang sendirian dan gak punya temen brader :wink:.
+Bahkan modern ini, profil GitHub dapat menggantikan resume/CV untuk melamar pekerjaan!
 
 ## Hosting Project ke Github
-- Registrasi project kita ke github
+- Menambahkan repo remote
+  Repo remote adalah repo yang ada di luar komputer kita. Dalam contoh ini adalah repo di github
   ```bash
-  $ git remote add <nama inisial> <nama branch> <link git>
+  $ git remote add <nama-remote> <link-repo-remote>
   ```
   Contoh :
   ```bash
-  $ git remote add github master https://github.com/DOSCOM/doscom-university-2017.git
+  $ git remote add origin https://github.com/DOSCOM/doscom-university-2017.git
   ```
   Untuk nama git dapat anda lihat di repository github anda pada bagian `Clone or download`
-- Hosting git
+
+- Menyimpan proyek ke repo remote
   ```bash
-  $ git push <nama inisial> <nama branch>
+  $ git push <nama-remote> <nama-branch>
   ```
+  secara default branch yang dimiliki adalah `master`.
   Contoh :
   ```bash
-  $ git remote add github master https://github.com/DOSCOM/doscom-university-2017.git
+  $ git push origin master
   ```
 
 ## Menggunakan Bootstrap
@@ -86,7 +94,7 @@ Untuk memasang bootstrap pada project ikuti langkah berikut
 ---
 ## Referensi dan Tambahan
 - :bulb: [Basic git dan github oleh hacktiv8](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/git-github-basics.md)
-- :bulb: [Tutorial interaktif Git oleh codesaya.com](https://codesaya.com/git/)
+- :bulb: [Tutorial interaktif Git dan Github oleh codesaya.com](https://codesaya.com/git/)
 
 ---
 
