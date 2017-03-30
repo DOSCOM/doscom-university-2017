@@ -1,4 +1,4 @@
-# Review Materi Pertemuan Pertama Doscom University #
+## Review Materi Pertemuan Pertama Doscom University
 
 ### HTML
 #### Membuat file html sederhana
@@ -329,3 +329,18 @@ p.namaClass{
     border-width: solid;
   }
   ```
+
+---
+
+---
+## Referensi dan Tambahan
+- :bulb: [Sololearn course CSS](https://www.sololearn.com/Course/CSS/)
+- :bulb: [Tutorial dan contekan lengkap HTML dan CSS di w3schools](https://www.w3schools.com/css/)
+
+---
+
+---
+credits:
+- [Sololearn](https://www.sololearn.com/)
+- [w3schools](https://www.w3schools.com/)
+- [doscom](http://doscom.org/)

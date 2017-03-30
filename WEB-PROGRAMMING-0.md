@@ -69,4 +69,6 @@ Sampai bertemu di kelas yaa :wink::wink:
 ---
 
 ---
-credits: [hacktiv8](https://github.com/hacktiv8)
+credits:
+- [hacktiv8](https://github.com/hacktiv8)
+- [doscom](http://doscom.org/)
