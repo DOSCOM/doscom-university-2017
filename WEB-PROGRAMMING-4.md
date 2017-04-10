@@ -7,21 +7,13 @@
 ### mySql
 
 - Buka phpmyadmin
-
 - Buat database baru (beri nama misal: “blog”)
-
 - Buat tabel posts berisi kolom masing-masing bernama:
-
    - postId (type: INT, length/value: 11, A_I: cek)
-
    - postTitle (type: VARCHAR, length: 200)
-
    - postDate (type: DATETIME)
-
    - postContent (type: TEXT)
-
    - postTag (type: VARCHAR, length: 100)
-
    - status (type: VARCHAR, length: 10)
 
 Atau gunakan SQL Query berikut:
@@ -37,7 +29,8 @@ PRIMARY KEY ('postId')
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 ```
 ![create-table](assets/query-create-table.png)
-klik go
+
+klik Go
 
 ### Persiapan
 
@@ -66,7 +59,6 @@ Selanjutnya buka project yang kita unduh tadi dengan teks editor (atom)
 - tulis kode ini di file connectDB untuk membuat koneksi database
 
 ```php
-<?php
 
 $host = 'localhost';
 $username = 'root';
