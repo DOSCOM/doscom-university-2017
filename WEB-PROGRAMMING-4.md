@@ -93,7 +93,6 @@ include_once 'connecDB.php';
 - Tulis kode berikut ke file addPost.php
 
 ```php
-<?php
 include_once 'connectDB.php';
 $query = "insert into posts values('', :postTitle, now(), :postContent, :postTag, :status);";
 $run = $db->prepare($query);
@@ -115,7 +114,6 @@ else {
 - Buka post_list.php tuliskan kode berikut pada tag table (`<table>`)
 
 ```php
-<?php
 
 include_once 'connectDB.php';
 $query = "SELECT * FROM posts ORDER BY postDate DESC";
@@ -135,7 +133,6 @@ Untuk melihat isi post kita akan membuat link dengan metode get post_view.php?id
 - Buka post_view.php tuliskan kode berikut
 
 ```php
-<?php
 
 include_once 'connectDB.php';
 $id=$_GET['id'];
@@ -155,7 +152,6 @@ Membuat hanya menampilkan post yang statusnya publish
 - Buka index.php (hanya akan menampilkan post yang statusnya publish) tuliskan kode berikut untuk list post yang ditampilkan
 
 ```php
-<?php
 include_once 'connectDB.php';
 $id=$_GET['id'];
 $query = "SELECT * FROM posts WHERE status='publish' ORDER BY postDate DESC";
@@ -173,7 +169,6 @@ Pada tahap ini jika kita membuka index.php maka tampilan list kosong, karena kit
 - Tuliskan kode berikut kedalam file publishPost.php
 
 ```php
-<?php
 include_once 'connectDB.php';
 $query = "update posts set status='publish' where postID=:key;";
 $run = $db->prepare($query);
@@ -193,7 +188,6 @@ else {
 - Untuk membuat update post, tuliskan kode berikut pada file updatePost.php
 
 ```php
-<?php
 
 include_once 'connectDB.php';
 $query = "UPDATE posts SET postTitle= :postTitle, postContent= :postContent WHERE postId=:key;";
@@ -214,7 +208,6 @@ else {
 - Kopikan file form_add.php pada form_edit, ubah actionnya menjadi "updatePost.php" lalu tambahkan kode berikut,
 
 ```php
-<?php
 
 include_once 'connectDB.php';
 $id=$_GET['id'];
@@ -234,7 +227,6 @@ foreach ($run as $value) {
 - Buka file deletePost.php lalu ketikkan kode berikut.
 
 ```php
-<?php
 
 include_once 'connectDB.php';
 $query = "delete from posts where postId=:key;";
