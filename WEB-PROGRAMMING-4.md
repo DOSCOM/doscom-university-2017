@@ -1,10 +1,10 @@
 # CRUD (Create, Read, Update, Delete) dengan PHP dan mySql
 
-### Cara kerja web
+## Cara kerja web
 
 ![web-skema](assets/webskema.png)
 
-### mySql
+## mySql
 
 - Buka phpmyadmin
 - Buat database baru (beri nama misal: “blog”)
@@ -32,7 +32,7 @@ PRIMARY KEY ('postId')
 
 klik Go
 
-### Persiapan
+## Persiapan
 
 - dengan browser, buka akun github [wkwksama](https://github.com/wkwksama/belajar-php-pdo)
 - fork repo tersebut, hingga repo tersebut terduplikat ke akun anda.
@@ -54,7 +54,7 @@ Selanjutnya buka project yang kita unduh tadi dengan teks editor (atom)
 - Buat file editPost.php
 - Buat file deletePost.php
 
-### Koneksi dengan PDO
+## Koneksi dengan PDO
 
 - tulis kode ini di file connectDB untuk membuat koneksi database
 
@@ -88,7 +88,7 @@ include_once 'connecDB.php';
 - Halaman akan menampilkan pesan “koneksi berhasil” pada atas halaman.
 - Jika terjadi error periksalah penulisan kode anda, seperti penulisan nama database, password, sintaks error dll.
 
-### Create
+## Create
 
 - Tulis kode berikut ke file addPost.php
 
@@ -109,7 +109,7 @@ else {
 }
 ```
 
-### Read
+## Read
 
 - Buka post_list.php tuliskan kode berikut pada tag table (`<table>`)
 
@@ -162,7 +162,7 @@ foreach ($run as $value) {
 }
 ```
 
-### Update
+## Update
 
 Pada tahap ini jika kita membuka index.php maka tampilan list kosong, karena kita belum mempublish apapun.
 
@@ -222,7 +222,7 @@ foreach ($run as $value) {
 
 - Pilih salah satu post pada tampilan post_list.php lalu klik pada tombol update, maka akan muncul post anda dalam bentuk form yang dapat anda edit.
 
-### Delete
+## Delete
 
 - Buka file deletePost.php lalu ketikkan kode berikut.
 
