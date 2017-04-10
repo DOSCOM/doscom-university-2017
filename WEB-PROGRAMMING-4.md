@@ -70,7 +70,7 @@ $db = null;
 try {
     $db = new PDO("$dbms:host=$host;dbname=$database;charset=$charset", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo “koneksi berhasil”;
+    echo "koneksi berhasil";
 }
     catch(PDOException $e) {
     echo 'koneksi error :'.$e->getMessage();
@@ -82,7 +82,7 @@ try {
 
 ```php
 <?php
-include_once 'connecDB.php';
+include_once 'connectDB.php';
 ?>
 ```
 - Halaman akan menampilkan pesan “koneksi berhasil” pada atas halaman.
