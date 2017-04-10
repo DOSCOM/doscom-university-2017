@@ -42,8 +42,8 @@ klik go
 ### Persiapan
 
 - dengan browser, buka akun github [wkwksama](https://github.com/wkwksama/belajar-php-pdo)
-- fork repo tersebut
-- klik pada clone or download, copy link yang muncul
+- fork repo tersebut, hingga repo tersebut terduplikat ke akun anda.
+- klik pada `clone or download`, copy link yang muncul
 - buka terminal
 - masukkan `cd /var/www/html` terus enter
 - masukkan `sudo git clone [REPO GITHUB MILIKMU]`
