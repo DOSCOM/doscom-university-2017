@@ -70,7 +70,7 @@ $db = null;
 try {
     $db = new PDO("$dbms:host=$host;dbname=$database;charset=$charset", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "koneksi berhasil";
+    echo “koneksi berhasil”;
 }
     catch(PDOException $e) {
     echo 'koneksi error :'.$e->getMessage();
