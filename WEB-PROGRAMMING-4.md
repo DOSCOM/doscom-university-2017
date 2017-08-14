@@ -18,14 +18,14 @@
 
 Atau gunakan SQL Query berikut:
 ```SQL
-CREATE TABLE IF NOT EXISTS 'posts' (
-'postId' int(11) NOT NULL AUTO_INCREMENT,
-'postTitle' varchar(200) NOT NULL,
-'postDate' datetime DEFAULT NULL,
-'postContent' text NOT NULL,
-'postTag' varchar(100) NOT NULL,
-'status' varchar(10) NOT NULL,
-PRIMARY KEY ('postId')
+CREATE TABLE `posts` (
+`postId` int(11) NOT NULL AUTO_INCREMENT,
+`postTitle` varchar(200) NOT NULL,
+`postDate` datetime DEFAULT NULL,
+`postContent` text NOT NULL,
+`postTag` varchar(100) NOT NULL,
+`status` varchar(10) NOT NULL,
+PRIMARY KEY (`postId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 ```
 ![create-table](assets/query-create-table.png)
@@ -82,7 +82,7 @@ try {
 
 ```php
 <?php
-include_once 'connecDB.php';
+include_once 'connectDB.php';
 ?>
 ```
 - Halaman akan menampilkan pesan “koneksi berhasil” pada atas halaman.
