@@ -6,9 +6,9 @@ Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop 
 
 ## Web Programming
 
-Roadmap belajar web kita jika menyesuaikan Nakula Raya dan sekitarnya ada [di sini](https://coggle.it/diagram/WL2RK13WNAAB_BrX) :stuck_out_tongue::stuck_out_tongue:
+<!-- Roadmap belajar web kita jika menyesuaikan Nakula Raya dan sekitarnya ada [di sini](https://coggle.it/diagram/WL2RK13WNAAB_BrX) :stuck_out_tongue::stuck_out_tongue: -->
 
-Versi lebih lengkap dan nyata yang [di sini](https://coggle.it/diagram/Vz9LvW8byvN0I38x)
+Roadmap global web programming [di sini](https://coggle.it/diagram/Vz9LvW8byvN0I38x)
 
 ### :book: [Web Programming Pertemuan 0](./WEB-PROGRAMMING-0.md)
 
